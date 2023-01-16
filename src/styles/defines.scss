@@ -1,0 +1,58 @@
+$fg-color: #2a3032;
+$bg-color: #525659;
+$bg-shadow: #22222280;
+$bg-shadow-deep: #222222;
+$accent-color: steelblue; // used to be #007ea7;
+$grey-mid: #5d5d5d;
+$grey-light: #aaafb3;
+$grey-lighter: #d8d9da;
+
+$space-xs: 0.1cm;
+$space-sm: 0.25cm;
+$space-md: 0.5cm;
+$space-lg: 0.75cm;
+$space-xl: 1cm;
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: normal;
+  font-weight: 100 300;
+  src: url('/fonts/GillSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 100 300;
+  src: url('/fonts/GillSans-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url('/fonts/GillSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 400 600;
+  src: url('/fonts/GillSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: normal;
+  font-weight: 700 900;
+  src: url('/fonts/GillSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 700 900;
+  src: url('/fonts/GillSans-BoldItalic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

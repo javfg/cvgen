@@ -1,0 +1,19 @@
+@import './defines.scss';
+
+.list-section {
+  article {
+    ul {
+      list-style: none;
+
+      .list-item {
+        display: flex;
+
+        strong {
+          text-align: right;
+          margin-right: $space-sm;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

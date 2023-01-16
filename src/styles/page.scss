@@ -1,0 +1,78 @@
+@import './defines.scss';
+
+// based on HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
+/* standard resolution: 2560x1440 @ 27" = 108.79PPI
+ * a4 page size:        8.3" x 11.7"
+ * in pixels:           903 x 1273
+ */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 21cm;
+  min-height: 29.7cm;
+  margin: auto;
+  padding-left: 2cm;
+  padding-top: 2cm;
+  padding-right: 2cm;
+  padding-bottom: 2cm;
+  background: white;
+  outline: 0;
+  box-shadow: 0 4px 15px $bg-shadow;
+  transform-origin: top left;
+}
+
+@page {
+  size: A4 portrait;
+  orphans: 4;
+  margin: 2cm;
+  widows: 2;
+}
+
+@media screen {
+  div.page-break::before {
+    content: '';
+    display: block;
+    height: 0.8cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    background-color: white;
+    box-shadow: 0 6px 5px $bg-shadow;
+  }
+  div.page-break {
+    display: block;
+    height: 1.2cm;
+    margin-left: -2.5cm;
+    margin-right: -2.5cm;
+    margin-top: 1.2cm;
+    margin-bottom: 2cm;
+    background: $bg-color;
+  }
+}
+
+@media print {
+  html,
+  body {
+    background-color: white;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .side-menu {
+    visibility: hidden;
+  }
+
+  .page {
+    width: initial !important;
+    min-height: initial !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: initial !important;
+    border-radius: initial !important;
+    background: initial !important;
+    box-shadow: initial !important;
+    print-color-adjust: exact;
+  }
+}
