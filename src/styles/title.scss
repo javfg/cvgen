@@ -1,0 +1,22 @@
+@import './defines.scss';
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: $space-xs;
+  align-items: baseline;
+
+  h1 {
+    span {
+      color: $accent-color;
+      text-transform: capitalize;
+    }
+  }
+
+  hr {
+    flex-grow: 1;
+    margin-left: $space-sm;
+    border: 0;
+    border-bottom: 2px solid $grey-mid;
+  }
+}

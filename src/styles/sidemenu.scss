@@ -1,0 +1,73 @@
+@import './defines.scss';
+
+.side-menu {
+  position: fixed;
+  display: flex;
+  top: $space-xl;
+  left: 0;
+  z-index: 2;
+
+  .side-menu-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.2rem;
+    z-index: 2;
+  }
+
+  .hidable {
+    position: relative;
+    transition: left 0.2s;
+    z-index: 1;
+  }
+
+  .ico {
+    transition: transform 0.2s;
+  }
+
+  .rotated {
+    transform: rotateZ(180deg);
+  }
+
+  .side-menu-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spaced {
+    margin-top: 0.2rem;
+  }
+
+  button {
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font: italic 12pt 'Cheguevara';
+    box-shadow: 0 4px 5px $bg-shadow;
+    background-color: $grey-lighter;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: white;
+      box-shadow: 0 4px 5px $bg-shadow-deep;
+    }
+
+    &:focus-visible {
+      outline: 2px solid white;
+    }
+
+    &.long {
+      flex-grow: 1;
+      padding: 0 3px;
+    }
+
+    &.small {
+      width: 31.5%;
+    }
+
+    &.selected {
+      color: white;
+      background-color: darken($accent-color, 10);
+    }
+  }
+}

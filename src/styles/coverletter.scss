@@ -1,0 +1,35 @@
+@import './defines.scss';
+
+.coverletter-section {
+  .coverletter-address {
+    margin-bottom: $space-xl;
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+      font-size: small;
+      font-variant: small-caps;
+    }
+  }
+
+  .coverletter-subject {
+    margin-bottom: $space-md;
+  }
+
+  .coverletter-businessline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  article {
+    p:not(:last-child) {
+      margin-bottom: $space-sm;
+    }
+  }
+
+  footer {
+    margin-top: $space-xl;
+    color: $grey-mid;
+    font-style: italic;
+  }
+}

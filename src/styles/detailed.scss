@@ -1,0 +1,20 @@
+@import './defines.scss';
+
+.detailed-section {
+  section:not(:last-of-type) {
+    margin-bottom: $space-md;
+  }
+  section:last-of-type {
+    margin: 0;
+  }
+
+  .detailed-title-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &:last-of-type {
+      margin-bottom: $space-xs;
+    }
+  }
+}
