@@ -79,6 +79,7 @@ export const Head = () => <title>Home Page</title>;
 
 export const query = graphql`
   query cvQuery {
+    # resume query fragments
     headerData: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/header.md/" } }) {
       nodes {
         ...headerData
@@ -107,14 +108,6 @@ export const query = graphql`
         ...detailedData
       }
     }
-    extracurricularData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/extracurricular.*.md/" } }
-      sort: { frontmatter: { startDate: DESC } }
-    ) {
-      nodes {
-        ...detailedData
-      }
-    }
     languageData: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/languages.md/" } }
     ) {
@@ -136,13 +129,6 @@ export const query = graphql`
         ...listData
       }
     }
-    interestsData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/interests.md/" } }
-    ) {
-      nodes {
-        ...listData
-      }
-    }
     trainingData: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/training.md/" } }
     ) {
@@ -157,6 +143,23 @@ export const query = graphql`
         ...freeTextData
       }
     }
+    extracurricularData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/extracurricular.*.md/" } }
+      sort: { frontmatter: { startDate: DESC } }
+    ) {
+      nodes {
+        ...detailedData
+      }
+    }
+    interestsData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/interests.md/" } }
+    ) {
+      nodes {
+        ...listData
+      }
+    }
+
+    # cover letter query fragments
     coverLetterData: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/cover-letter.md/" } }
     ) {
