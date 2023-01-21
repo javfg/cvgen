@@ -6,7 +6,15 @@ import Title from '../components/title';
 import { removeTabIndexes } from '../utils/utils';
 import { DateTime } from 'luxon';
 
-const DetailedEntry = ({ title, location, subtitle, startDateStr, endDateStr, html }) => (
+const DetailedEntry = ({
+  title,
+  location,
+  subtitle,
+  startDateStr,
+  endDateStr,
+  singleDate,
+  html,
+}) => (
   <section>
     <div className="detailed-title-container">
       <h2>{title}</h2>
@@ -15,7 +23,8 @@ const DetailedEntry = ({ title, location, subtitle, startDateStr, endDateStr, ht
     <div className="detailed-title-container">
       <h3>{subtitle}</h3>
       <em>
-        {startDateStr}–{endDateStr}
+        {startDateStr}
+        {!singleDate && `– ${endDateStr}`}
       </em>
     </div>
     <article dangerouslySetInnerHTML={{ __html: removeTabIndexes(html) }}></article>
@@ -26,7 +35,15 @@ export default function Detailed({ caption, data, dateFormat: dateFormatFromProp
   const detailedEntries = data.nodes.map(node => {
     const {
       id,
-      frontmatter: { title, location, subtitle, startDate, endDate, dateFormat: dateFormatFromMD },
+      frontmatter: {
+        title,
+        location,
+        subtitle,
+        startDate,
+        endDate,
+        dateFormat: dateFormatFromMD,
+        singleDate,
+      },
       html,
     } = node;
 
@@ -34,7 +51,7 @@ export default function Detailed({ caption, data, dateFormat: dateFormatFromProp
     const startDateStr = startDate ? DateTime.fromISO(startDate).toFormat(dateFormat) : '';
     const endDateStr = endDate ? DateTime.fromISO(endDate).toFormat(dateFormat) : '';
 
-    return { id, title, location, subtitle, startDateStr, endDateStr, html };
+    return { id, title, location, subtitle, startDateStr, endDateStr, singleDate, html };
   });
 
   return (
@@ -57,6 +74,7 @@ export const query = graphql`
       startDate
       endDate
       dateFormat
+      singleDate
     }
     html
   }

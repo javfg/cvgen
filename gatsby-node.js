@@ -34,6 +34,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       ps: [String]
       entries: [Entry!]
       dateFormat: String
+      singleDate: Boolean
     }
   `;
   createTypes(typeDefs);
