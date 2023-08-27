@@ -2,7 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/public',
   plugins: [
     'gatsby-plugin-mdx',
     {
