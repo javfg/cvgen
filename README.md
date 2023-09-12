@@ -24,7 +24,7 @@ You can check out the results in [my CV](https://cvgen.meneillos.com).
 The final aim of this application is to help in the writing of the CV, and then
 generating a PDF from it by printing the result into a PDF from the browser.
 
-You can either hosting it or use it locally.
+You can either serve a web or use it locally to get your PDFs.
 
 To host it locally, you only need to install GatsbyJS and run it:
 
