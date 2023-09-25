@@ -7,26 +7,29 @@
 
 I was tired of updating my LaTeX CV for every job posting I wanted to send it.
 Even though LaTeX is great, it is more suited for academic writing. Creating
-complicated templates for something like a CV is tiring.
+complicated templates for something like this is tiring.
 
 Nowadays, web technologies are much more suited for this task. HTML + CSS are
 very easy to use and extremely powerful for designing.
 
 This project aims to make everything even easier by using
-[GatsbyJS](https://www.gatsbyjs.com/) to fill in a set of different sections
-into a CV by just filling in Markdown and specyfing the style with SCSS.
+[GatsbyJS](https://www.gatsbyjs.com/) to render a beautiful CV and Cover Letter
+with different sections using data defined in Markdown and style them with SCSS.
 
 You can check out the results in [my CV](https://cvgen.meneillos.com).
 
 
 ## 🚀 Using it yourself
 
-The final aim of this application is to help in the writing of the CV, and then
-generating a PDF from it by printing the result into a PDF from the browser.
+The final uses of this application are one or more of the following:
 
-You can either serve a web or use it locally to get your PDFs.
+1. Set up a **local dev instance** where you can watch changes as you edit
+2. **Export a PDF version** of your CV
+3. **Host** your CV
 
-To host it locally, you only need to install GatsbyJS and run it:
+### Local dev instance
+
+To start a local dev server, you only need to install GatsbyJS and run it:
 
 ```bash
 sudo npm i -g gatsby
@@ -37,8 +40,33 @@ gatsby develop
 You will be able to see a live version of the CV that updates as you edit it by
 pointing your browser to http://localhost:8000.
 
-Keep in mind, if you want to host it somewhere and it is not in the domain root,
-you will have to edit the `pathPrefix` variable of
+
+### Print a PDF version
+
+You can do this from the browser by using the "Print to PDF" destination in the
+Print dialog.
+
+Another option is to run (only on Linux for now):
+
+```bash
+sudo npm i -g gatsby
+npm i
+npm run print
+```
+
+
+### Host your CV
+
+You can build a version to serve online with:
+
+```bash
+sudo npm i -g gatsby
+npm i
+gatsby build
+```
+
+Keep in mind, if you want to host it somewhere not in the domain root, you will
+have to edit the `pathPrefix` variable of
 [`./gatsby-config.js`](gatsby-config.js) with the path.
 
 
@@ -80,5 +108,4 @@ on this (for now).
 
 ## To-do
 
-* Generate a PDF from the command line.
 * Add different styles.

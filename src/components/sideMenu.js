@@ -85,6 +85,7 @@ function SideMenu({ selection = 'cv', docHandler }) {
       </div>
       <div className="side-menu-column hidable" style={{ left: visible ? 0 : -160 }}>
         <button
+          id="button-cv"
           className={`side-menu-button${selection === 'cv' ? ' selected' : ''}`}
           title="Go to Curriculum Vitae (1)"
           onClick={() => docHandler('cv')}
@@ -93,6 +94,7 @@ function SideMenu({ selection = 'cv', docHandler }) {
           Curriculum Vitae
         </button>
         <button
+          id="button-cl"
           className={`side-menu-button${selection === 'cl' ? ' selected' : ''}`}
           title="Go to Cover Letter (2)"
           onClick={() => docHandler('cl')}
