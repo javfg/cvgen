@@ -57,10 +57,10 @@ const IndexPage = ({ data }) => {
           <List caption="Languages" data={languageData} />
           <List caption="Technical skills" data={skillsData} />
           <List caption="Personal skills" data={personalSkillsData} />
-          <FreeText caption="Publications" data={publicationsData} />
           <Detailed caption="Extracurricular activities" data={extracurricularData} />
-          <FreeText caption="Training" data={trainingData} />
           <List caption="Interests & hobbies" data={interestsData} />
+          <FreeText caption="Publications" data={publicationsData} />
+          {/* <FreeText caption="Training" data={trainingData} /> */}
         </Page>
       )}
       {doc === 'cl' && (
