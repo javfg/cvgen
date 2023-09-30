@@ -15,6 +15,7 @@ import SideMenu from '../components/sideMenu';
 
 import '../styles/styles.scss';
 import { Helmet } from 'react-helmet';
+import { isWindow } from '../utils/utils';
 
 const IndexPage = ({ data }) => {
   library.add(fab, faEnvelope, faPhone, faGlobe);
@@ -33,9 +34,13 @@ const IndexPage = ({ data }) => {
     coverLetterData,
   } = data;
   const { firstname, lastname } = headerData.nodes[0].frontmatter;
-  const [doc, setDoc] = useState('cv');
+  const anchor = isWindow() && window.location.hash.substring(1) === 'cl' ? 'cl' : 'cv';
+  const [doc, setDoc] = useState(anchor);
 
   const handleDocChange = doc => {
+    if (isWindow()) {
+      window.location.hash = doc;
+    }
     setDoc(doc);
   };
 
