@@ -21,4 +21,7 @@ contact:
   - value: javfg
     url: https://linkedin.com/in/javfg
     icon: fa-brands fa-linkedin
+  - value: blog
+    url: https://blog.meneillos.com
+    icon: fa-globe
 ---

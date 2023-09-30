@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { graphql } from 'gatsby';
 
 import CoverLetter from '../templates/coverLetter';
@@ -17,7 +17,7 @@ import '../styles/styles.scss';
 import { Helmet } from 'react-helmet';
 
 const IndexPage = ({ data }) => {
-  library.add(fab, faEnvelope, faPhone);
+  library.add(fab, faEnvelope, faPhone, faGlobe);
   const {
     headerData,
     profileData,
