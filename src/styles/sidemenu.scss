@@ -1,23 +1,23 @@
-@import './defines.scss';
+@import './_defines';
 
 .side-menu {
   position: fixed;
-  display: flex;
   top: $space-xl;
   left: 0;
   z-index: 2;
+  display: flex;
 
   .side-menu-column {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     margin-right: 0.2rem;
-    z-index: 2;
   }
 
   .hidable {
     position: relative;
-    transition: left 0.2s;
     z-index: 1;
+    transition: left 0.2s;
   }
 
   .ico {
@@ -41,11 +41,11 @@
     margin-bottom: 0.2rem;
     padding: 0.5rem;
     border: none;
-    cursor: pointer;
-    font: italic 12pt 'GillSans';
-    box-shadow: 0 4px 5px $bg-shadow;
     background-color: $grey-lighter;
+    font: italic 12pt 'GillSans';
     transition: background-color 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 5px $bg-shadow;
 
     &:hover {
       background-color: white;

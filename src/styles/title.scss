@@ -1,15 +1,15 @@
-@import './defines.scss';
+@import './_defines';
 
 .title {
   display: flex;
   flex-direction: row;
-  margin-bottom: $space-xs;
   align-items: baseline;
+  margin-bottom: $space-xs;
 
   h1 {
     span {
-      font-weight: 500;
       color: $accent-color;
+      font-weight: 500;
       text-transform: capitalize;
     }
   }

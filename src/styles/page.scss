@@ -1,4 +1,4 @@
-@import './defines.scss';
+@import './_defines';
 
 // based on HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
 /* standard resolution: 2560x1440 @ 27" = 108.79PPI
@@ -9,23 +9,23 @@
 .page {
   display: flex;
   flex-direction: column;
-  width: 21cm;
   min-height: 29.7cm;
+  width: 21cm;
   margin: auto;
-  padding-left: 2cm;
   padding-top: 2cm;
   padding-right: 2cm;
   padding-bottom: 2cm;
-  background: white;
+  padding-left: 2cm;
   outline: 0;
+  background: white;
   box-shadow: 0 4px 15px $bg-shadow;
   transform-origin: top left;
 }
 
 @page {
-  size: A4 portrait;
-  orphans: 4;
   margin: 2cm;
+  orphans: 4;
+  size: A4 portrait;
   widows: 2;
 }
 
@@ -34,18 +34,18 @@
     content: '';
     display: block;
     height: 0.8cm;
-    margin-left: 0.5cm;
     margin-right: 0.5cm;
+    margin-left: 0.5cm;
     background-color: white;
     box-shadow: 0 6px 5px $bg-shadow;
   }
   div.page-break {
     display: block;
     height: 1.2cm;
-    margin-left: -2.5cm;
-    margin-right: -2.5cm;
     margin-top: 1.2cm;
+    margin-right: -2.5cm;
     margin-bottom: 2cm;
+    margin-left: -2.5cm;
     background: $bg-color;
   }
 }
@@ -65,8 +65,8 @@
   }
 
   .page {
-    width: initial !important;
     min-height: initial !important;
+    width: initial !important;
     margin: 0 !important;
     padding: 0 !important;
     border: initial !important;

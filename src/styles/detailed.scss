@@ -1,4 +1,4 @@
-@import './defines.scss';
+@import './_defines';
 
 .detailed-section {
   section:not(:last-of-type) {
@@ -10,8 +10,8 @@
 
   .detailed-title-container {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
+    align-items: baseline;
 
     &:last-of-type {
       margin-bottom: $space-xs;

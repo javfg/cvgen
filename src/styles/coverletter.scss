@@ -1,4 +1,4 @@
-@import './defines.scss';
+@import './_defines';
 
 .coverletter-section {
   .coverletter-address {
@@ -6,9 +6,9 @@
 
     p {
       margin: 0;
-      line-height: 1.5;
       font-size: small;
       font-variant: small-caps;
+      line-height: 1.5;
     }
   }
 

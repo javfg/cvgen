@@ -1,4 +1,4 @@
-@import './defines.scss';
+@import './_defines';
 
 .list-section {
   article {
@@ -9,8 +9,8 @@
         display: flex;
 
         strong {
-          text-align: right;
           margin-right: $space-sm;
+          text-align: right;
           white-space: nowrap;
         }
       }

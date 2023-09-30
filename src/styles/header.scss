@@ -1,4 +1,4 @@
-@import './defines.scss';
+@import './_defines';
 
 header {
   display: flex;
@@ -7,9 +7,9 @@ header {
   margin-bottom: $space-xl;
 
   hr {
+    height: 1px;
     width: 100%;
     border: 0;
-    height: 1px;
     background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
@@ -33,15 +33,15 @@ header {
     }
 
     span:first-of-type {
-      font-weight: 300;
       color: $grey-mid;
+      font-weight: 300;
     }
   }
 
   .header-titles {
     color: $accent-color;
-    font-variant: small-caps;
     font-size: small;
+    font-variant: small-caps;
   }
 
   .header-address {
