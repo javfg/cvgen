@@ -4,8 +4,9 @@ import { graphql } from 'gatsby';
 
 import '../styles/header.scss';
 
-const ContactContainer = ({ url, children }) =>
-  url ? (
+const ContactEntry = ({ icon, value, url }) => (
+  <li>
+    <FontAwesomeIcon icon={icon} />{' '}
     <a
       tabIndex={-1}
       className="header-contact"
@@ -13,16 +14,8 @@ const ContactContainer = ({ url, children }) =>
       target="_blank"
       rel="noopener noreferrer"
     >
-      {children}
+      {value}
     </a>
-  ) : (
-    <span className="header-contact">{children}</span>
-  );
-const ContactEntry = ({ icon, value, url }) => (
-  <li>
-    <ContactContainer url={url}>
-      <FontAwesomeIcon icon={icon} /> {value}
-    </ContactContainer>
   </li>
 );
 
