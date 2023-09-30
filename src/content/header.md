@@ -3,7 +3,7 @@ firstname: Javier
 lastname: Ferrer
 titles:
   - MSc in Bioinformatics
-  - Software Engineer
+  - Full Stack Engineer
 address:
   address:
     - Geneva
@@ -12,8 +12,8 @@ contact:
   # - value:
   #   url: tel:
   #   icon: fa-phone
-  - value: javier.ferrer@cern.ch
-    url: mailto:javier.ferrer@cern.ch
+  - value: javier.f.g@um.es
+    url: mailto:javier.f.g@um.es
     icon: fa-envelope
   - value: javfg
     url: https://github.com/javfg
