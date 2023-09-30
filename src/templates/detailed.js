@@ -24,7 +24,7 @@ const DetailedEntry = ({
       <h3>{subtitle}</h3>
       <em>
         {startDateStr}
-        {!singleDate && `– ${endDateStr}`}
+        {!singleDate && ` – ${endDateStr}`}
       </em>
     </div>
     <article dangerouslySetInnerHTML={{ __html: removeTabIndexes(html) }}></article>
