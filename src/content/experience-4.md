@@ -1,17 +1,16 @@
 ---
-title: Web DevOps Technician
-subtitle: Tecnomur, S.L.
+title: DevOps Technician
+subtitle: TecnoMur, S.L.
 location: Región de Murcia, Spain
 startDate: 2010-09-01
 endDate: 2018-07-01
 ---
 
 While getting my degree, I worked part-time for 8 years in a local software
-company. I focused mainly on web development and systems administration. My
-tasks included:
+company. I focused mainly on web development and systems administration.
 
 * Design and construction of web portals and applications with high
-  availability.
+  availability using **PHP** and **JQuery**.
 * **Configuration and operation of enterprise servers**, as well
   as their on-premise deployment in the clients' sites.
 * **Management of SLAs** between the company and clients.

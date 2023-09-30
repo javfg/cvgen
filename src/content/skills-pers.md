@@ -1,15 +1,21 @@
 ---
 entries:
+
   - title: Curious
-    content: My main driving force is to understand how things work on the inside. Because of this, I enjoy learning, not only for work but also for my own personal growth.
+    content: My main driving force is to understand how things work on the inside. I enjoy learning, on the job and for personal growth. Having a wider arsenal of problem solving skills improves creativity and critical thinking.
+
   - title: Flexible
-    content: During my stay at CERN, I have worked in two different groups (IT-CDA and IT-ST), and I quickly adapted to the different ecosystems and teams.
+    content: During my career I have quickly adapted and contributed to different ecosystems and teams. I am also capable of negotiation and making decisions that appease multiple stakeholders.
+
+  - title: Eager to help
+    content: If you want to master something, teach it. When colleagues turn to me with questions or problems, I try to be as helpful as possible; when they do not, I actively try to participate.
+
+  - title: Patient
+    content: I think empathy and respect are paramount in a work environment. I always keep cool and bring a positive attitude.
+
   - title: Organized
     content: I like to keep my space and my time clutter free. Planning tasks thoroughly saves time in the long run as you reduce iteration.
-  - title: Eager to help
-    content: If you want to master something, teach it. When colleagues turn to me with questions or problems, I try to be as helpful as possible.
-  - title: Problem solver
-    content: Fixing things comes as second nature to me. When you understand the way something works, it is fun to hack it and find new ideas or insights.
+
   - title: Determined
     content: Even in the direst circumstances, I still push on.
 ---

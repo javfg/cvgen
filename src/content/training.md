@@ -5,7 +5,7 @@ _Only training done while at CERN is listed_
 * IT Tools for **Service Managers**
 * **Speech** Communication
 * **French** A1, A2.1, A2
-* **First Aid** and **Fire extinguisher**
+* **First Aid** and **Fire extinguisher** courses
 * Learn **Go** for Beginners Crash Course (udemy)
 * **Go**: The Complete Developer's Guide (udemy)
 * Working with Microservices in **Go** (udemy)
@@ -15,3 +15,4 @@ _Only training done while at CERN is listed_
 * **Kubernetes** for the Absolute Beginners (udemy)
 * **Kubernetes** Certified Application Developer (udemy)
 * Certified **Kubernetes** Administrator (udemy)
+* **Performance profiling tools** on Linux
