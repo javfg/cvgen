@@ -2,7 +2,7 @@ $fg-color: #2a3032;
 $bg-color: #525659;
 $bg-shadow: #22222280;
 $bg-shadow-deep: #222222;
-$accent-color: steelblue; // used to be #007ea7;
+$accent-color: #286191; // used to be #007ea7;
 $grey-mid: #5d5d5d;
 $grey-light: #aaafb3;
 $grey-lighter: #d8d9da;
@@ -14,10 +14,162 @@ $space-lg: 0.75cm;
 $space-xl: 1cm;
 
 @font-face {
-  font-family: 'Cheguevara';
+  font-family: 'GillSans';
   font-style: normal;
   font-weight: 100 300;
-  src: url('../../static/fonts/CheGuevaraText-Sans.ttf');
+  src: url('../../static/fonts/GillSans-Light.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 100 300;
+  src: url('../../static/fonts/GillSans-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url('../../static/fonts/GillSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 400 600;
+  src: url('../../static/fonts/GillSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: normal;
+  font-weight: 700 900;
+  src: url('../../static/fonts/GillSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'GillSans';
+  font-style: italic;
+  font-weight: 700 900;
+  src: url('../../static/fonts/GillSans-BoldItalic.ttf');
+}
+
+// INTER FONT
+// THIN
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+// EXTRALIGHT
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-ExtraLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+// LIGHT
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+// REGULAR
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+// MEDIUM
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+// SEMIBOLD
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+// BOLD
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../static/fonts/Inter-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

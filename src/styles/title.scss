@@ -8,6 +8,7 @@
 
   h1 {
     span {
+      font-weight: 500;
       color: $accent-color;
       text-transform: capitalize;
     }
@@ -17,6 +18,6 @@
     flex-grow: 1;
     margin-left: $space-sm;
     border: 0;
-    border-bottom: 2px solid $grey-mid;
+    border-bottom: 1px solid $grey-mid;
   }
 }
