@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 
 import '../styles/list.scss';
@@ -6,12 +6,6 @@ import Title from '../components/title';
 
 export default function List({ caption, data }) {
   const { entries } = data.nodes[0].frontmatter;
-  const entryRefs = useRef([]);
-  const [entryTitleWidth, setEntryTitleWidth] = useState(null);
-
-  useLayoutEffect(() => {
-    entryRefs.current.forEach(er => setEntryTitleWidth(a => Math.max(er.offsetWidth, a)));
-  }, []);
 
   return (
     <section className="list-section">
@@ -21,12 +15,7 @@ export default function List({ caption, data }) {
           {entries.map((entry, i) => (
             <li key={i}>
               <div className="list-item">
-                <strong
-                  ref={e => (entryRefs.current[i] = e)}
-                  style={{ minWidth: entryTitleWidth || 'auto' }}
-                >
-                  {entry.title}
-                </strong>
+                <strong>{entry.title}</strong>
                 <span>{entry.content}</span>
               </div>
             </li>

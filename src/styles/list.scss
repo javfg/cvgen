@@ -9,9 +9,10 @@
         display: flex;
 
         strong {
+          width: 100px;
+          min-width: 100px;
           margin-right: $space-sm;
           text-align: right;
-          white-space: nowrap;
         }
       }
     }
