@@ -1,5 +1,5 @@
 {
-  "cSpell.files": ["*.md"],
+  "cSpell.ignorePaths": ["**/*.js", "**/*.scss", "**/*.json"],
   "postcssSorting.config": {
     "order": [
       "custom-properties",
@@ -162,5 +162,21 @@
       "user-select",
     ],
     "unspecified-properties-position" : "bottomAlphabetical"
-  }
+  },
+  "cSpell.userWords": [
+    "Indico",
+    "CodiMD",
+    "Invenio",
+    "CEPH",
+    "EMBL",
+    "Bioinformatics",
+    "Región",
+    "VISUALTIS",
+    "TecnoMur",
+    "NATS",
+    "Rundeck",
+  ],
+  "cSpell.ignoreWords": [
+    "datelocale"
+  ]
 }
