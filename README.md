@@ -16,6 +16,31 @@ This project aims to make everything even easier by using
 [GatsbyJS](https://www.gatsbyjs.com/) to render a beautiful CV and Cover Letter
 with different sections using data defined in Markdown and style them with SCSS.
 
+As a quick example, using the default style, this code:
+
+```markdown
+---
+title: Road Runner Hunting Specialist
+subtitle: ACME Corp.
+location: Desert Country
+startDate: 1949-04-04
+endDate:
+---
+
+I did **a lot** of stuff here! But mostly, I spent my time chasing the
+Road Runner. Take a look at this cool list:
+
+* Used **20 tonnes** of dynamite with a road runner hit accuracy of 0%.
+* Ran about **42,000Km**.
+* I also made some [links](https://example.com)!
+* Fell down a total of **1337 cliffs and ravines**.
+* Destroyed many **anvils**.
+```
+
+Will look like this:
+
+![Alt text](.github/readme/example.png)
+
 You can check out the results in [my CV](https://cvgen.meneillos.com).
 
 
@@ -23,9 +48,10 @@ You can check out the results in [my CV](https://cvgen.meneillos.com).
 
 The final uses of this application are one or more of the following:
 
-1. Set up a **local dev instance** where you can watch changes as you edit
-2. **Export a PDF version** of your CV
-3. **Host** your CV
+1. Set up a **local dev instance** where you can watch edit your CV and see the
+   changes in real time as you go.
+2. **Export a PDF version** of your CV.
+3. **Host** your CV.
 
 ### Local dev instance
 
