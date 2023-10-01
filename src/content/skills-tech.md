@@ -10,6 +10,8 @@ entries:
     content: PostgreSQL, MySQL, SQLAlchemy, mongoDB, Neo4j.
   - title: Operations
     content: Shell scripting, Docker, Kubernetes, Puppet, OpenShift, Prometheus, Grafana.
+  - title: Static/Docs
+    content: GatsbyJS, Hugo, Zola, MKDocs, ReadtheDocs, LaTeX.
   - title: Tools
-    content: Git, GitHub, GitHub Actions, GitLab CI, Jira, Sentry, Rundeck.
+    content: Git, GitHub, GitHub Actions, GitLab CI, Jira, Sentry, Rundeck, Foreman.
 ---
