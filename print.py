@@ -1,11 +1,13 @@
 #! /usr/bin/env python3
 
 import base64
+import time
 
 import frontmatter
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
@@ -25,6 +27,8 @@ with open("src/content/header.md") as f:
 
 driver.get("http://localhost:9000")
 
+time.sleep(3)
+
 cvpdf = driver.execute_cdp_cmd(
     "Page.printToPDF", {"printBackground": False, "displayHeaderFooter": False}
 )
@@ -40,5 +44,6 @@ clpdf = driver.execute_cdp_cmd(
 
 with open(cl_filename, "wb") as f:
     f.write(base64.b64decode(clpdf["data"]))
+
 
 driver.quit()
