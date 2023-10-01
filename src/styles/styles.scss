@@ -115,3 +115,18 @@ em {
 table {
   page-break-inside: avoid;
 }
+
+@media screen and (max-width: 600px) {
+  html {
+    main {
+      flex-direction: column-reverse;
+      padding: 0;
+
+      .page {
+        min-height: auto;
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+}

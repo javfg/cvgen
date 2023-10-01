@@ -74,7 +74,7 @@ function SideMenu({ selection = 'cv', docHandler }) {
 
   return (
     <div ref={sideMenuRef} className="side-menu">
-      <div className="side-menu-column">
+      <div id="side-menu-hide" className="side-menu-column">
         <button
           className="long"
           title={`${visible ? 'Hide' : 'Show'} controls (h)`}
@@ -83,7 +83,11 @@ function SideMenu({ selection = 'cv', docHandler }) {
           <FontAwesomeIcon className={visible ? 'ico' : 'ico rotated'} icon={faCaretLeft} />
         </button>
       </div>
-      <div className="side-menu-column hidable" style={{ left: visible ? 0 : -160 }}>
+      <div
+        id="side-menu-doc"
+        className="side-menu-column hidable"
+        style={{ left: visible ? 0 : -160 }}
+      >
         <button
           id="button-cv"
           className={`side-menu-button${selection === 'cv' ? ' selected' : ''}`}
@@ -102,7 +106,7 @@ function SideMenu({ selection = 'cv', docHandler }) {
         >
           Cover Letter
         </button>
-        <div className="side-menu-row spaced">
+        <div id="side-menu-zoom" className="side-menu-row spaced">
           <button
             className="side-menu-button small"
             title="Zoom out (-)"
@@ -128,7 +132,7 @@ function SideMenu({ selection = 'cv', docHandler }) {
             <FontAwesomeIcon icon={faMagnifyingGlassPlus} />
           </button>
         </div>
-        <div className="side-menu-row">
+        <div id="side-menu-print" className="side-menu-row">
           <button
             className="side-menu-button small"
             title="Open print dialog (p)"
