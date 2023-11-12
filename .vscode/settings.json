@@ -181,10 +181,16 @@
     "Informática",
     "Virgen",
     "Arrixaca",
-
+    "Particules",
+    "Ferrer",
+    "OWASP",
+    "Saint-Genis-Pouilly",
+    "Pentesting",
   ],
   "cSpell.ignoreWords": [
     "datelocale",
     "itempool",
+    "firstname",
+    "lastname",
   ]
 }
