@@ -34,6 +34,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       subject: String
       ps: [String]
       entries: [Entry!]
+      items: [String]
       dateFormat: String
       singleDate: Boolean
     }
