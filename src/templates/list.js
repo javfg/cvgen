@@ -4,14 +4,14 @@ import { graphql } from 'gatsby';
 import '../styles/list.scss';
 import Title from '../components/title';
 
-export default function List({ caption, data }) {
+export default function List({ caption, data, inline }) {
   const { entries } = data.nodes[0].frontmatter;
 
   return (
     <section className="list-section">
       <Title caption={caption} />
       <article>
-        <ul>
+        <ul className={`${inline ? 'inline' : ''}`}>
           {entries.map((entry, i) => (
             <li key={i}>
               <div className="list-item">
