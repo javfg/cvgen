@@ -65,9 +65,9 @@ function SideMenu({ selection = 'cv', docHandler }) {
 
   useLayoutEffect(() => {
     if (navigator.userAgent.toLowerCase().includes('firefox')) {
-      document.getElementById('page').style.transform = `scale(${zoom})`;
+      document.querySelector('.page').style.transform = `scale(${zoom})`;
     }
-    document.getElementById('page').style.zoom = zoom;
+    document.querySelector('.page').style.zoom = zoom;
   }, [zoom]);
 
   const tabIndexWhenInvisible = !visible ? { tabIndex: -1 } : {};

@@ -2,9 +2,9 @@ import React from 'react';
 
 import '../styles/page.scss';
 
-function Page({ children }) {
+function Page({ children, id }) {
   return (
-    <div id="page" className="page">
+    <div id={id} className="page">
       {children}
     </div>
   );

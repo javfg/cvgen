@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
 
       <SideMenu selection={doc} docHandler={handleDocChange} />
       {doc === 'cv' && (
-        <Page>
+        <Page id="cv">
           <Header caption="top" data={headerData} />
           <FreeText caption="profile" data={profileData} />
           <Detailed caption="experience" data={experienceData} />
@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
         </Page>
       )}
       {doc === 'cl' && (
-        <Page>
+        <Page id="cl">
           <Header align="end" data={headerData} />
           <CoverLetter data={coverLetterData} />
         </Page>

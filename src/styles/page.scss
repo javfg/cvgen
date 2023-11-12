@@ -12,18 +12,22 @@
   min-height: 29.7cm;
   width: 21cm;
   margin: auto;
-  padding-top: 0.75cm;
+  padding-top: 1cm;
   padding-right: 1cm;
-  padding-bottom: 0.75cm;
+  padding-bottom: 1cm;
   padding-left: 1cm;
   outline: 0;
   background: white;
   box-shadow: 0 4px 15px $bg-shadow;
   transform-origin: top left;
+
+  &#cl {
+    padding: 2cm;
+  }
 }
 
 @page {
-  margin: 2cm;
+  margin: 1cm;
   orphans: 4;
   size: A4 portrait;
   widows: 2;
