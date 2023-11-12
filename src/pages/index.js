@@ -55,17 +55,17 @@ const IndexPage = ({ data }) => {
       <SideMenu selection={doc} docHandler={handleDocChange} />
       {doc === 'cv' && (
         <Page>
-          <Header caption="Top" data={headerData} />
-          <FreeText caption="Profile" data={profileData} />
-          <Detailed caption="Experience" data={experienceData} />
-          <Detailed caption="Education" data={educationData} dateFormat="yyyy" />
-          <List caption="Languages" data={languageData} />
-          <List caption="Technical skills" data={skillsData} />
-          <List caption="Personal skills" data={personalSkillsData} />
-          <Detailed caption="Extracurricular activities" data={extracurricularData} />
-          <List caption="Interests & hobbies" data={interestsData} />
-          <FreeText caption="Publications" data={publicationsData} />
-          {/* <FreeText caption="Training" data={trainingData} /> */}
+          <Header caption="top" data={headerData} />
+          <FreeText caption="profile" data={profileData} />
+          <Detailed caption="experience" data={experienceData} />
+          <Detailed caption="education" data={educationData} dateFormat="yyyy" />
+          <List caption="languages" data={languageData} />
+          <List caption="technical skills" data={skillsData} />
+          <List caption="personal skills" data={personalSkillsData} />
+          <Detailed caption="extracurricular activities" data={extracurricularData} />
+          <List caption="interests & hobbies" data={interestsData} />
+          <FreeText caption="publications" data={publicationsData} />
+          {/* <FreeText caption="training" data={trainingData} /> */}
         </Page>
       )}
       {doc === 'cl' && (
