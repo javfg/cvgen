@@ -1,12 +1,10 @@
 ---
 address:
-  recipient: To the Hiring Committee
+  recipient: Hiring Manager
   business:
   date:
-  datelocale: "fr-CH"
+  datelocale: "es-ES"
   address:
-    -
-    -
     -
 subject: Open application
 ps:

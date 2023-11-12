@@ -9,6 +9,7 @@ import CoverLetter from '../templates/coverLetter';
 import Detailed from '../templates/detailed';
 import FreeText from '../templates/freeText';
 import Header from '../templates/header';
+import ItemList from '../templates/itemList';
 import List from '../templates/list';
 import Page from '../components/page';
 import SideMenu from '../components/sideMenu';
@@ -22,15 +23,10 @@ const IndexPage = ({ data }) => {
   const {
     headerData,
     profileData,
+    skillsData,
     experienceData,
     educationData,
     languageData,
-    skillsData,
-    personalSkillsData,
-    publicationsData,
-    extracurricularData,
-    trainingData,
-    interestsData,
     coverLetterData,
   } = data;
   const { firstname, lastname } = headerData.nodes[0].frontmatter;
@@ -57,14 +53,15 @@ const IndexPage = ({ data }) => {
         <Page id="cv">
           <Header caption="top" data={headerData} />
           <FreeText caption="profile" data={profileData} />
+          <ItemList caption="key skills" data={skillsData} />
           <Detailed caption="experience" data={experienceData} />
           <Detailed caption="education" data={educationData} dateFormat="yyyy" />
-          <List caption="languages" data={languageData} />
-          <List caption="technical skills" data={skillsData} />
+          <List caption="languages" data={languageData} inline />
+          {/* <List caption="technical skills" data={skillsData} />
           <List caption="personal skills" data={personalSkillsData} />
           <Detailed caption="extracurricular activities" data={extracurricularData} />
           <List caption="interests & hobbies" data={interestsData} />
-          <FreeText caption="publications" data={publicationsData} />
+          <FreeText caption="publications" data={publicationsData} /> */}
           {/* <FreeText caption="training" data={trainingData} /> */}
         </Page>
       )}
@@ -97,6 +94,11 @@ export const query = graphql`
         ...freeTextData
       }
     }
+    skillsData: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/skills.md/" } }) {
+      nodes {
+        ...itemListData
+      }
+    }
     experienceData: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/experience.*.md/" } }
       sort: { frontmatter: { startDate: DESC } }
@@ -120,7 +122,7 @@ export const query = graphql`
         ...listData
       }
     }
-    skillsData: allMarkdownRemark(
+    technicalSkillsData: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/skills-tech.md/" } }
     ) {
       nodes {

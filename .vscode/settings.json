@@ -186,6 +186,7 @@
     "OWASP",
     "Saint-Genis-Pouilly",
     "Pentesting",
+    "frontends",
   ],
   "cSpell.ignoreWords": [
     "datelocale",

@@ -1,7 +1,7 @@
 ---
 entries:
   - title: Programming
-    content: GoLang, Python 3, JavaScript/HTML/(S)CSS, C/C++, Java.
+    content: Go, Python 3, JavaScript/HTML/(S)CSS, C/C++, Java.
   - title: Front-end
     content: React, Vue, Angular, Svelte, Semantic UI, Material UI, ESBuild, WebPack, GraphQL.
   - title: Back-end

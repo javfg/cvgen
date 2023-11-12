@@ -1,0 +1,58 @@
+---
+title: key skills
+items:
+  - Java
+  - JavaScript
+  - Go
+  - Python
+  - SQL
+  - GraphQL
+  - mongoDB
+  - Shell scripting
+  - React
+  - Vue
+  - Webpack
+  - esbuild
+  - Spring Boot
+  - gRPC
+  - Redis
+  - NATS
+  - Gradle
+  - Linux
+  - Docker
+  - Puppet
+  - Prometheus
+  - Grafana
+  - Systems architecture
+  - Git
+  - DevOps
+  - CI/CD
+  - GitHub Actions
+  - Agile methodologies
+itempool:
+  - NPM
+  - Angular
+  - Security
+  - Pentesting
+  - QA
+  - PostgreSQL
+  - Flask
+  - Celery
+  - Spring
+  - NodeJS
+  - MySQL
+  - SQLAlchemy
+  - Neo4j
+  - Kubernetes
+  - OpenShift
+  - GatsbyJS
+  - Hugo
+  - Zola
+  - MKDocs
+  - ReadtheDocs
+  - LaTeX
+  - Jira
+  - Sentry
+  - Rundeck
+  - Foreman
+---
