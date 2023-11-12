@@ -176,8 +176,15 @@
     "NATS",
     "Rundeck",
     "predilect",
+    "Universidad",
+    "Facultad",
+    "Informática",
+    "Virgen",
+    "Arrixaca",
+
   ],
   "cSpell.ignoreWords": [
-    "datelocale"
+    "datelocale",
+    "itempool",
   ]
 }
