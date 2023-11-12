@@ -5,13 +5,14 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       list-style: none;
       padding: 0;
+      margin: 0 -0.7rem;
 
       li {
-        margin: 0 1rem;
-        display: inline;
+        display: inline-flex;
+        margin: 0 0.7rem;
       }
     }
   }
