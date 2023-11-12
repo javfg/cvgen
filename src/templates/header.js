@@ -35,8 +35,8 @@ export default function Header({ data, align = 'center' }) {
       </h1>
       <span className="header-titles">{titles.join(' · ')}</span>
       <hr className={`${align === 'end' ? 'hr-end' : ''}`} />
-      <span className="header-address">{address.join(' · ')}</span>
       <ul>
+        <li>{address.join(' · ')}</li>
         {contact.map(ce => (
           <ContactEntry key={ce.icon} {...ce} />
         ))}
